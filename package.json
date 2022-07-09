@@ -1,0 +1,33 @@
+{
+  "name": "bolt-js-template",
+  "version": "1.0.0",
+  "description": "A scaffold template for Slack apps",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "lint": "eslint --ext .js ."
+  },
+  "author": "Slack Technologies, LLC",
+  "license": "MIT",
+  "keywords": [
+    "slack",
+    "bolt",
+    "slackapi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slackapi/bolt-js-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slackapi/bolt-js-template/issues"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.11.3",
+    "dotenv": "~16.0.1"
+  },
+  "devDependencies": {
+    "eslint": "~8.18.0",
+    "eslint-config-airbnb-base": "~15.0.0",
+    "eslint-plugin-import": "~2.26.0"
+  }
+}

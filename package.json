@@ -4,6 +4,7 @@
   "description": "A scaffold template for Slack apps",
   "main": "app.js",
   "scripts": {
+    "build": "rimraf dist && tsc",
     "start": "tsc && node ./dist/app.js",
     "lint": "eslint . --ext .ts"
   },
@@ -23,7 +24,7 @@
     "url": "https://github.com/slack-samples/bolt-ts-starter-template/issues"
   },
   "dependencies": {
-    "@slack/bolt": "^3.11.3",
+    "@slack/bolt": "slackapi/bolt-js#future",
     "dotenv": "~16.0.1"
   },
   "devDependencies": {

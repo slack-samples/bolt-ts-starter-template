@@ -5,6 +5,7 @@ import events from './events';
 import messages from './messages';
 import shortcuts from './shortcuts';
 import views from './views';
+import functions from './functions';
 
 const registerListeners = (app: App) => {
   actions.register(app);
@@ -13,6 +14,7 @@ const registerListeners = (app: App) => {
   messages.register(app);
   shortcuts.register(app);
   views.register(app);
+  functions.register(app);
 };
 
 export default registerListeners;

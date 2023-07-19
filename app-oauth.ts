@@ -19,10 +19,12 @@ const app = new App({
       // Org-wide installation
       if (installation.isEnterpriseInstall && installation.enterprise !== undefined) {
         tempDB.set(installation.enterprise.id, installation);
+        return;
       }
       // Single team installation
       if (installation.team !== undefined) {
         tempDB.set(installation.team.id, installation);
+        return;
       }
       throw new Error('Failed saving installation data to installationStore');
     },
@@ -41,10 +43,12 @@ const app = new App({
       // Org-wide installation deletion
       if (installQuery.isEnterpriseInstall && installQuery.enterpriseId !== undefined) {
         tempDB.delete(installQuery.enterpriseId);
+        return;
       }
       // Single team installation deletion
       if (installQuery.teamId !== undefined) {
         tempDB.delete(installQuery.teamId);
+        return;
       }
       throw new Error('Failed to delete installation');
     },

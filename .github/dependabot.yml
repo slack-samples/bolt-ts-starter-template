@@ -12,3 +12,7 @@ updates:
         patterns:
         - "eslint*"
         - "@typescript-eslint*"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"

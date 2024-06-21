@@ -1,6 +1,6 @@
-# Bolt for JavaScript Template App
+# Bolt for TypeScript Template App
 
-This is a generic Bolt for JavaScript template app used to build out Slack apps.
+This is a generic Bolt for TypeScript template app used to build out Slack apps.
 
 Before getting started, make sure you have a development workspace where you have permissions to install apps. If you don’t have one setup, go ahead and [create one](https://slack.com/create).
 ## Installation
@@ -33,9 +33,9 @@ Before you can run the app, you'll need to store some environment variables.
 
 `manifest.json` is a configuration for Slack apps. With a manifest, you can create an app with a pre-defined configuration, or adjust the configuration of an existing app.
 
-### `app.js`
+### `app.ts`
 
-`app.js` is the entry point for the application and is the file you'll run to start the server. This project aims to keep this file as thin as possible, primarily using it as a way to route inbound requests.
+`app.ts` is the entry point for the application and is the file you'll run to start the server. This project aims to keep this file as thin as possible, primarily using it as a way to route inbound requests.
 
 ### `/listeners`
 
@@ -44,7 +44,7 @@ Every incoming request is routed to a "listener". Inside this directory, we grou
 
 ## App Distribution / OAuth
 
-Only implement OAuth if you plan to distribute your application across multiple workspaces. A separate `app-oauth.js` file can be found with relevant OAuth settings.
+Only implement OAuth if you plan to distribute your application across multiple workspaces. A separate `app-oauth.ts` file can be found with relevant OAuth settings.
 
 When using OAuth, Slack requires a public URL where it can send requests. In this template app, we've used [`ngrok`](https://ngrok.com/download). Checkout [this guide](https://ngrok.com/docs#getting-started-expose) for setting it up.
 

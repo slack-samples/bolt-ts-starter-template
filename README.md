@@ -1,6 +1,6 @@
-# Bolt for TypeScript Template App
+# Bolt for JavaScript (TypeScript) Template App
 
-This is a generic Bolt for TypeScript template app used to build out Slack apps.
+This is a generic Bolt for JavaScript (TypeScript) template app used to build out Slack apps.
 
 Before getting started, make sure you have a development workspace where you have permissions to install apps. If you don’t have one setup, go ahead and [create one](https://slack.com/create).
 

@@ -1,4 +1,4 @@
-import { App } from '@slack/bolt';
+import type { App } from '@slack/bolt';
 import actions from './actions';
 import commands from './commands';
 import events from './events';

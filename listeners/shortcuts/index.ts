@@ -1,4 +1,4 @@
-import { App } from '@slack/bolt';
+import type { App } from '@slack/bolt';
 import sampleShortcutCallback from './sample-shortcut';
 
 const register = (app: App) => {

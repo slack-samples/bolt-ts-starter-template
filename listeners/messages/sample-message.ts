@@ -1,4 +1,4 @@
-import { AllMiddlewareArgs, SlackEventMiddlewareArgs } from '@slack/bolt';
+import type { AllMiddlewareArgs, SlackEventMiddlewareArgs } from '@slack/bolt';
 
 const sampleMessageCallback = async ({ context, say }: AllMiddlewareArgs & SlackEventMiddlewareArgs<'message'>) => {
   try {

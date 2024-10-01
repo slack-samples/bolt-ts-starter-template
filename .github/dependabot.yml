@@ -7,11 +7,6 @@ updates:
     labels:
       - "npm"
       - "dependencies"
-    groups:
-      linter:
-        patterns:
-        - "eslint*"
-        - "@typescript-eslint*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:

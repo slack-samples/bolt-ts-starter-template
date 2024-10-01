@@ -1,4 +1,4 @@
-import { App } from '@slack/bolt';
+import type { App } from '@slack/bolt';
 import sampleViewCallback from './sample-view';
 
 const register = (app: App) => {

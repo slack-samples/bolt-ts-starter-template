@@ -1,7 +1,6 @@
-import { AllMiddlewareArgs, SlackViewMiddlewareArgs } from '@slack/bolt';
+import type { AllMiddlewareArgs, SlackViewMiddlewareArgs } from '@slack/bolt';
 
-const sampleViewCallback = async ({ ack, view, body, client }:
-  AllMiddlewareArgs & SlackViewMiddlewareArgs) => {
+const sampleViewCallback = async ({ ack, view, body, client }: AllMiddlewareArgs & SlackViewMiddlewareArgs) => {
   await ack();
 
   try {

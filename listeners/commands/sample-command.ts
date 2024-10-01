@@ -1,7 +1,6 @@
-import { AllMiddlewareArgs, SlackCommandMiddlewareArgs } from '@slack/bolt';
+import type { AllMiddlewareArgs, SlackCommandMiddlewareArgs } from '@slack/bolt';
 
-const sampleCommandCallback = async ({ ack, respond }:
-  AllMiddlewareArgs & SlackCommandMiddlewareArgs) => {
+const sampleCommandCallback = async ({ ack, respond }: AllMiddlewareArgs & SlackCommandMiddlewareArgs) => {
   try {
     await ack();
     await respond('Responding to the sample command!');

@@ -1,4 +1,4 @@
-import { App } from '@slack/bolt';
+import type { App } from '@slack/bolt';
 import sampleActionCallback from './sample-action';
 
 const register = (app: App) => {

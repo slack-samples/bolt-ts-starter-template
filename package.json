@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node ./dist/app.js",
-    "lint": "npx @biomejs/biome check --write *.ts listeners",
+    "lint": "npx @biomejs/biome check *.ts listeners",
+    "lint:fix": "npx @biomejs/biome check --write *.ts listeners",
     "test": "npm run build && npm run lint"
   },
   "author": "Slack Technologies, LLC",

@@ -2,7 +2,7 @@
   "name": "bolt-ts-starter-template",
   "version": "1.0.0",
   "description": "A scaffold template for Slack apps",
-  "main": "app.js",
+  "main": "dist/app.js",
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node ./dist/app.js",

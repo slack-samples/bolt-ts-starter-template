@@ -3,6 +3,7 @@ import type { AllMiddlewareArgs, SlackEventMiddlewareArgs } from '@slack/bolt';
 const appHomeOpenedCallback = async ({
   client,
   event,
+  logger,
 }: AllMiddlewareArgs & SlackEventMiddlewareArgs<'app_home_opened'>) => {
   // Ignore the `app_home_opened` event for anything but the Home tab
   if (event.tab !== 'home') return;
@@ -31,7 +32,7 @@ const appHomeOpenedCallback = async ({
       },
     });
   } catch (error) {
-    console.error(error);
+    logger.error(error);
   }
 };
 

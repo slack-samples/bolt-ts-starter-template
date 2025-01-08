@@ -4,6 +4,7 @@ const sampleActionCallback = async ({
   ack,
   client,
   body,
+  logger,
 }: AllMiddlewareArgs & SlackActionMiddlewareArgs<BlockAction>) => {
   try {
     await ack();
@@ -66,7 +67,7 @@ const sampleActionCallback = async ({
       },
     });
   } catch (error) {
-    console.error(error);
+    logger.error(error);
   }
 };
 

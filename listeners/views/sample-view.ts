@@ -1,6 +1,6 @@
 import type { AllMiddlewareArgs, SlackViewMiddlewareArgs } from '@slack/bolt';
 
-const sampleViewCallback = async ({ ack, view, body, client }: AllMiddlewareArgs & SlackViewMiddlewareArgs) => {
+const sampleViewCallback = async ({ ack, view, body, client, logger }: AllMiddlewareArgs & SlackViewMiddlewareArgs) => {
   await ack();
 
   try {
@@ -13,7 +13,7 @@ const sampleViewCallback = async ({ ack, view, body, client }: AllMiddlewareArgs
       text: `<@${body.user.id}> submitted the following :sparkles: hopes and dreams :sparkles:: \n\n ${sampleInputValue}`,
     });
   } catch (error) {
-    console.error(error);
+    logger.error(error);
   }
 };
 

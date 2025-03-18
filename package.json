@@ -26,7 +26,7 @@
     "url": "https://github.com/slack-samples/bolt-ts-starter-template/issues"
   },
   "dependencies": {
-    "@slack/bolt": "^4.2.0",
+    "@slack/bolt": "^4.2.1",
     "dotenv": "~16.4.7"
   },
   "devDependencies": {

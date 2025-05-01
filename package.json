@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@slack/bolt": "^4.2.1",
-    "dotenv": "~16.4.7"
+    "dotenv": "~16.5.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",

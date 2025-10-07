@@ -71,4 +71,4 @@ const sampleActionCallback = async ({
   }
 };
 
-export default sampleActionCallback;
+export { sampleActionCallback };

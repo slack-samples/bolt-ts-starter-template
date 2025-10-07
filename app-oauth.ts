@@ -1,8 +1,7 @@
 import { App, LogLevel } from '@slack/bolt';
-import { config } from 'dotenv';
-import registerListeners from './listeners';
+import 'dotenv/config';
 
-config();
+import registerListeners from './listeners/index.js';
 
 // For development purposes only
 const tempDB = new Map();

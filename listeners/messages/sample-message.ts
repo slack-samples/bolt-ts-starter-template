@@ -13,4 +13,4 @@ const sampleMessageCallback = async ({
   }
 };
 
-export default sampleMessageCallback;
+export { sampleMessageCallback };

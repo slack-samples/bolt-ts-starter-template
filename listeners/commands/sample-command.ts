@@ -9,4 +9,4 @@ const sampleCommandCallback = async ({ ack, respond, logger }: AllMiddlewareArgs
   }
 };
 
-export default sampleCommandCallback;
+export { sampleCommandCallback };

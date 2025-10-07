@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "A scaffold template for Slack apps",
   "main": "dist/app.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node ./dist/app.js",
     "lint": "npx @biomejs/biome check *.ts listeners",
     "lint:fix": "npx @biomejs/biome check --write *.ts listeners",
-    "test": "npm run build && npm run lint"
+    "test": "node --test tests/**/*.spec.ts"
   },
   "author": "Slack Technologies, LLC",
   "license": "MIT",

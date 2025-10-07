@@ -73,4 +73,4 @@ const sampleShortcutCallback = async ({
   }
 };
 
-export default sampleShortcutCallback;
+export { sampleShortcutCallback };

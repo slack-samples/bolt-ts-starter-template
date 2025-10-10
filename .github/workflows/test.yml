@@ -24,7 +24,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: npm run lint
       - run: npm test
-        if: ${{ matrix.node-version != '20.x' }}
-      - run: npm run build

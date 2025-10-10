@@ -9,7 +9,7 @@
     "start": "npm run build && node ./dist/app.js",
     "lint": "npx @biomejs/biome check *.ts listeners tests",
     "lint:fix": "npx @biomejs/biome check --write *.ts listeners tests",
-    "test": "node --import tsx --test"
+    "test": "npm run build && npm run lint && node --import tsx --test"
   },
   "author": "Slack Technologies, LLC",
   "license": "MIT",

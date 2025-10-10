@@ -36,4 +36,4 @@ const appHomeOpenedCallback = async ({
   }
 };
 
-export default appHomeOpenedCallback;
+export { appHomeOpenedCallback };

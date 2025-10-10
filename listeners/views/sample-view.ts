@@ -1,9 +1,8 @@
 import type { AllMiddlewareArgs, SlackViewMiddlewareArgs } from '@slack/bolt';
 
-const sampleViewCallback = async ({ ack, view, body, client, logger }: AllMiddlewareArgs & SlackViewMiddlewareArgs) => {
-  await ack();
-
+const sampleViewCallback = async ({ ack, body, client, logger, view }: AllMiddlewareArgs & SlackViewMiddlewareArgs) => {
   try {
+    await ack();
     const { input_block_id, select_channel_block_id } = view.state.values;
     const sampleInputValue = input_block_id.sample_input_id.value;
     const sampleConvoValue = select_channel_block_id.sample_dropdown_id.selected_conversation;
@@ -17,4 +16,4 @@ const sampleViewCallback = async ({ ack, view, body, client, logger }: AllMiddle
   }
 };
 
-export default sampleViewCallback;
+export { sampleViewCallback };

@@ -1,6 +1,5 @@
 import { App, LogLevel } from '@slack/bolt';
 import 'dotenv/config';
-
 import registerListeners from './listeners/index.js';
 
 /** Initialization */

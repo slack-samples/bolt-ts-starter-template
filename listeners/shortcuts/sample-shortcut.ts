@@ -1,10 +1,10 @@
 import type { AllMiddlewareArgs, SlackShortcutMiddlewareArgs } from '@slack/bolt';
 
 const sampleShortcutCallback = async ({
-  shortcut,
   ack,
   client,
   logger,
+  shortcut,
 }: AllMiddlewareArgs & SlackShortcutMiddlewareArgs) => {
   try {
     const { trigger_id } = shortcut;

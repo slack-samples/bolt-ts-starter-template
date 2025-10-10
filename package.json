@@ -7,9 +7,9 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node ./dist/app.js",
-    "lint": "npx @biomejs/biome check *.ts listeners",
-    "lint:fix": "npx @biomejs/biome check --write *.ts listeners",
-    "test": "node --test tests/**/*.spec.ts"
+    "lint": "npx @biomejs/biome check *.ts listeners tests",
+    "lint:fix": "npx @biomejs/biome check --write *.ts listeners tests",
+    "test": "node --import tsx --test"
   },
   "author": "Slack Technologies, LLC",
   "license": "MIT",
@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.2"
   }
 }

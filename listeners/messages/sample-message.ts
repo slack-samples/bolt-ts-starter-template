@@ -2,8 +2,8 @@ import type { AllMiddlewareArgs, SlackEventMiddlewareArgs } from '@slack/bolt';
 
 const sampleMessageCallback = async ({
   context,
-  say,
   logger,
+  say,
 }: AllMiddlewareArgs & SlackEventMiddlewareArgs<'message'>) => {
   try {
     const greeting = context.matches[0];

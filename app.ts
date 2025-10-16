@@ -4,12 +4,20 @@ import registerListeners from './listeners';
 
 dotenv.config();
 
+// For dev
+/*
+const clientOptions = {
+  slackApiUrl: 'https://dev.slack.com/api/'
+};
+*/
+
 /** Initialization */
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   socketMode: true,
   appToken: process.env.SLACK_APP_TOKEN,
   logLevel: LogLevel.DEBUG,
+  //clientOptions: clientOptions // TODO: remove
 });
 
 /** Register Listeners */

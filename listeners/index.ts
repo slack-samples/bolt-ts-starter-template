@@ -1,10 +1,11 @@
 import type { App } from '@slack/bolt';
-import actions from './actions';
-import commands from './commands';
-import events from './events';
-import messages from './messages';
-import shortcuts from './shortcuts';
-import views from './views';
+
+import actions from './actions/index.js';
+import commands from './commands/index.js';
+import events from './events/index.js';
+import messages from './messages/index.js';
+import shortcuts from './shortcuts/index.js';
+import views from './views/index.js';
 
 const registerListeners = (app: App) => {
   actions.register(app);

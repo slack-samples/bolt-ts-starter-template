@@ -2,8 +2,8 @@ import type { AllMiddlewareArgs, BlockAction, SlackActionMiddlewareArgs } from '
 
 const sampleActionCallback = async ({
   ack,
-  client,
   body,
+  client,
   logger,
 }: AllMiddlewareArgs & SlackActionMiddlewareArgs<BlockAction>) => {
   try {
@@ -71,4 +71,4 @@ const sampleActionCallback = async ({
   }
 };
 
-export default sampleActionCallback;
+export { sampleActionCallback };

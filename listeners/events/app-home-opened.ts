@@ -6,7 +6,9 @@ const appHomeOpenedCallback = async ({
   logger,
 }: AllMiddlewareArgs & SlackEventMiddlewareArgs<'app_home_opened'>) => {
   // Ignore the `app_home_opened` event for anything but the Home tab
-  if (event.tab !== 'home') return;
+  if (event.tab !== 'home') {
+    return;
+  }
 
   try {
     await client.views.publish({
@@ -36,4 +38,4 @@ const appHomeOpenedCallback = async ({
   }
 };
 
-export default appHomeOpenedCallback;
+export { appHomeOpenedCallback };

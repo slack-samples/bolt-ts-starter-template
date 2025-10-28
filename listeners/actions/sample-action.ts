@@ -2,17 +2,26 @@ import type { AllMiddlewareArgs, BlockAction, SlackActionMiddlewareArgs } from '
 
 const sampleActionCallback = async ({
   ack,
-  client,
   body,
+  client,
   logger,
 }: AllMiddlewareArgs & SlackActionMiddlewareArgs<BlockAction>) => {
   try {
     await ack();
+
+    /**
+     * Return if this action somehow wasn't from a modal.
+     *
+     * @see {@link ../shortcuts/sample-shortcut.ts}
+     * @see {@link https://www.typescriptlang.org/docs/handbook/2/narrowing.html}
+     */
+    if (body.view?.type !== 'modal') {
+      return;
+    }
+
     await client.views.update({
-      // biome-ignore lint/style/noNonNullAssertion: view may be undefined, depending on the source of this action(did it come from an action within a conversation message or a modal?). take care!
-      view_id: body.view!.id,
-      // biome-ignore lint/style/noNonNullAssertion: view may be undefined, depending on the source of this action(did it come from an action within a conversation message or a modal?). take care!
-      hash: body.view!.hash,
+      view_id: body.view.id,
+      hash: body.view.hash,
       view: {
         type: 'modal',
         callback_id: 'sample_view_id',
@@ -71,4 +80,4 @@ const sampleActionCallback = async ({
   }
 };
 
-export default sampleActionCallback;
+export { sampleActionCallback };

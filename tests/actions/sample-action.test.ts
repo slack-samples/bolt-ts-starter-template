@@ -7,6 +7,7 @@ import { fakeAck, fakeClient, fakeLogger } from '../helpers.js';
 
 const fakeBody = {
   view: {
+    type: 'modal',
     id: 'test_id',
     hash: '156772938.1827394',
   },

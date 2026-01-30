@@ -24,11 +24,27 @@ Before you can run the app, you'll need to store some environment variables.
 
 #### Install Dependencies
 
-`npm install`
+```sh
+npm install
+```
+
+#### Build the App
+
+```sh
+npm run build
+```
+
+For development, use watch mode to automatically rebuild on changes:
+
+```sh
+npm run build:watch
+```
 
 #### Run Bolt Server
 
-`npm start`
+```sh
+npm start
+```
 
 ## Project Structure
 

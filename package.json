@@ -27,12 +27,12 @@
     "url": "https://github.com/slack-samples/bolt-ts-starter-template/issues"
   },
   "dependencies": {
-    "@slack/bolt": "^4.5.0",
+    "@slack/bolt": "^4.6.0",
     "dotenv": "~17.2.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.1",
-    "tsx": "^4.20.6",
+    "@biomejs/biome": "^2.3.10",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }

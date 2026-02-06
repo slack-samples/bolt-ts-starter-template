@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node ./dist/app.js",
+    "build:watch": "tsc --watch",
+    "start": "node ./dist/app.js",
     "lint": "npx @biomejs/biome check *.ts listeners tests",
     "lint:fix": "npx @biomejs/biome check --write *.ts listeners tests",
     "test": "npm run build && npm run lint && node --import tsx --test"

@@ -6,6 +6,35 @@ Before getting started, make sure you have a development workspace where you hav
 
 ## Installation
 
+### Using Slack CLI
+
+Install the latest version of the Slack CLI for your operating system:
+
+- [Slack CLI for macOS & Linux](https://docs.slack.dev/tools/slack-cli/guides/installing-the-slack-cli-for-mac-and-linux/)
+- [Slack CLI for Windows](https://docs.slack.dev/tools/slack-cli/guides/installing-the-slack-cli-for-windows/)
+
+You'll also need to log in if this is your first time using the Slack CLI.
+
+```sh
+slack login
+```
+
+#### Initializing the project
+
+```sh
+slack create bolt-ts-starter --template slack-samples/bolt-ts-starter-template
+cd bolt-ts-starter
+```
+
+#### Running the app
+
+```sh
+slack run
+```
+
+<details>
+<summary><h3>Using Terminal</h3></summary>
+
 #### Create a Slack App
 
 1. Open [https://api.slack.com/apps/new](https://api.slack.com/apps/new) and choose "From an app manifest"
@@ -45,6 +74,8 @@ npm run build:watch
 ```sh
 npm start
 ```
+
+</details>
 
 ## Project Structure
 

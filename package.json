@@ -32,7 +32,7 @@
     "dotenv": "~17.4.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.2",
+    "@biomejs/biome": "^2.5.5",
     "tsx": "^4.23.1",
     "typescript": "^6.0.3"
   }

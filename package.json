@@ -8,7 +8,7 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "start": "node ./dist/app.js",
-    "lint": "npx @biomejs/biome check *.ts listeners tests",
+    "lint": "npx @biomejs/biome check .",
     "lint:fix": "npx @biomejs/biome check --write *.ts listeners tests",
     "test": "npm run build && npm run lint && node --import tsx --test"
   },

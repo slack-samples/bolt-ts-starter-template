@@ -1,12 +1,12 @@
 {
-    /*
-     * Visit https://aka.ms/tsconfig to read more about this file.
-     */
-    "$schema": "https://www.schemastore.org/tsconfig.json",
-    "compilerOptions": {
-        "target": "esnext",
-        "module": "nodenext",
-        "outDir": "./dist",
-        "strict": true
-    }
+  /*
+   * Visit https://aka.ms/tsconfig to read more about this file.
+   */
+  "$schema": "https://www.schemastore.org/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "nodenext",
+    "outDir": "./dist",
+    "strict": true
+  }
 }

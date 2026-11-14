@@ -8,8 +8,8 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "start": "node ./dist/app.js",
-    "lint": "npx @biomejs/biome check *.ts listeners tests",
-    "lint:fix": "npx @biomejs/biome check --write *.ts listeners tests",
+    "lint": "npx @biomejs/biome check .",
+    "lint:fix": "npx @biomejs/biome check --write .",
     "test": "npm run build && npm run lint && node --import tsx --test"
   },
   "author": "Slack Technologies, LLC",

@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": ["**", "!.agents/skills", "!.claude/skills", "!skills-lock.json"]
+  },
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,

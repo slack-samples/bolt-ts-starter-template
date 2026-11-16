@@ -34,19 +34,12 @@
   },
   "oauth_config": {
     "scopes": {
-      "bot": [
-        "channels:history",
-        "chat:write",
-        "commands"
-      ]
+      "bot": ["channels:history", "chat:write", "commands"]
     }
   },
   "settings": {
     "event_subscriptions": {
-      "bot_events": [
-        "app_home_opened",
-        "message.channels"
-      ]
+      "bot_events": ["app_home_opened", "message.channels"]
     },
     "interactivity": {
       "is_enabled": true
